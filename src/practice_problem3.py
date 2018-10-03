@@ -2,8 +2,8 @@
 PRACTICE Test 2, practice_problem 3.
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Drew Borman.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 # Students:
@@ -225,6 +225,7 @@ def run_test_practice_problem3b():
 
 
 def practice_problem3b(sequence):
+    for k in range(len(sequence)):
     """
     What comes in: A non-empty sequence.
     What goes out: Returns True if the last item of the sequence
@@ -327,6 +328,12 @@ def run_test_practice_problem3c():
 
 
 def practice_problem3c(sequence):
+    seq = []
+    for k in range(len(sequence)):
+        if sequence[k] == 0:
+            seq.append(k)
+    return seq
+
     """
     What comes in: A non-empty sequence of integers.
     What goes out: Returns a list of integers,
@@ -354,7 +361,7 @@ def practice_problem3c(sequence):
       :type: sequence: list    or tuple or string
     """
     ####################################################################
-    # TODO: 4. Implement and test this function.
+    # DONE: 4. Implement and test this function.
     #     The testing code is already written for you (above).
     ####################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -507,6 +514,13 @@ def run_test_practice_problem3e():
 
 
 def practice_problem3e(sequence):
+    count = 0
+    for k in range(len(sequence)):
+        if k % 2 == 0:
+            count = count + sequence[k]
+    return count
+
+
     """
     What comes in:
       A sequence of numbers.
@@ -522,7 +536,7 @@ def practice_problem3e(sequence):
       :type sequence: list(float)    or tuple(float)
     """
     # ------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #     The testing code is already written for you (above).
     ####################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
