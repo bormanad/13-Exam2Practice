@@ -180,9 +180,8 @@ def run_test_practice_problem2b():
 
 
 def practice_problem2b(sequence):
-    for k in range(len(sequence)):
 
-    """
+        """
     What comes in:
       -- A sequence of strings, e.g. ('hello', 'Bye', 'ok joe')
     What goes out:

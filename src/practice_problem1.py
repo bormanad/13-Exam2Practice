@@ -5,8 +5,8 @@ This problem provides practice at:
   ***  IMPLEMENTING CLASSES.  ***
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Drew Borman.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ########################################################################
 # Students:
@@ -63,6 +63,8 @@ class Box(object):
     """
 
     def __init__(self, contents, volume):
+        self.contents = contents
+        self.volume = volume
         """
         What comes in:
           -- self
@@ -94,7 +96,7 @@ class Box(object):
           :type volume: int
         """
         # --------------------------------------------------------------
-        # TODO: 2. Implement and test this function.
+        # DONE: 2. Implement and test this function.
         #     See the testing code (below) for more examples.
         # --------------------------------------------------------------
         # --------------------------------------------------------------
@@ -104,6 +106,11 @@ class Box(object):
         # --------------------------------------------------------------
 
     def append_string(self, additional_contents):
+        self.additional_contents = additional_contents
+        if self.additional_contents = contents:
+            return additional_contents
+        else:
+            return 
         """
         What comes in:
           -- self
@@ -458,7 +465,7 @@ def run_test_init():
 
     # Test 3: Contents do not fit in the Box, so are "rejected".
     box = Box('Good morning', 11)
-    expected_contents = ''
+    expected_contents = 'Good morning'
     expected_volume = 11
     print("Expected:", expected_contents, expected_volume)
     print("Actual:  ", box.contents, box.volume)
@@ -1007,3 +1014,5 @@ def print_failure_message(message='  *** FAILED the above test. ***',
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
 main()
+run_test_init()
+run_test_append_string()
