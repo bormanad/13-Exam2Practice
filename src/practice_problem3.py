@@ -226,7 +226,7 @@ def run_test_practice_problem3b():
 
 def practice_problem3b(sequence):
     for k in range(len(sequence)):
-    """
+        """
     What comes in: A non-empty sequence.
     What goes out: Returns True if the last item of the sequence
       appears again somewhere else in the sequence.  Returns False
@@ -416,6 +416,11 @@ def run_test_practice_problem3d():
 
 
 def practice_problem3d(sequence):
+    for k in range(len(sequence)):
+        if sequence[k] == 0:
+            return k
+    else:
+        return -1
     """
     What comes in: A sequence of integers.
     What goes out: Returns the first (leftmost) place (index)
@@ -443,14 +448,14 @@ def practice_problem3d(sequence):
       :type: sequence: list    or tuple or string
     """
     ####################################################################
-    # TODO: 5. Implement and test this function.
+    # DONE: 5. Implement and test this function.
     #     The testing code is already written for you (above).
     ####################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
     #    DIFFICULTY:      5
     #    TIME ESTIMATE:   8 minutes for each part of this problem.
     ####################################################################
-
+    practice_problem3c(sequence)
 
     ####################################################################
     # TODO: 6. Just ABOVE this TODO, you should have implemented
