@@ -32,11 +32,11 @@ import rosegraphics as rg
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    run_test_practice_problem3a()
+    #run_test_practice_problem3a()
     run_test_practice_problem3b()
-    run_test_practice_problem3c()
-    run_test_practice_problem3d()
-    run_test_practice_problem3e()
+    #run_test_practice_problem3c()
+    #run_test_practice_problem3d()
+    #run_test_practice_problem3e()
 
 
 def is_prime(n):
@@ -139,7 +139,7 @@ def run_test_practice_problem3a():
 def practice_problem3a(circles):
     total = 1
     for k in range(len(circles)):
-        total = total*rg.Point()
+        total = total * circles[k].center.x
     return total
 
 
@@ -162,7 +162,7 @@ def practice_problem3a(circles):
       :type sequence: [rg.Circle]
     """
     ####################################################################
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #     The testing code is already written for you (above).
     ####################################################################
     # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
@@ -231,6 +231,12 @@ def run_test_practice_problem3b():
 
 
 def practice_problem3b(sequence):
+    for k in range(len(sequence)):
+        if sequence[k] == sequence[-1]:
+            if k == len(sequence)-1:
+                return False
+            return True
+
         """
     What comes in: A non-empty sequence.
     What goes out: Returns True if the last item of the sequence
@@ -272,7 +278,7 @@ def practice_problem3b(sequence):
       :type: sequence: list    or tuple or string
     """
     ####################################################################
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #     The testing code is already written for you (above).
     #
     # IMPLEMENTATION REQUIREMENT:  You are NOT allowed to use the
