@@ -137,6 +137,12 @@ def run_test_practice_problem3a():
 
 
 def practice_problem3a(circles):
+    total = 1
+    for k in range(len(circles)):
+        total = total*rg.Point()
+    return total
+
+
     """
     What comes in:  A sequence of rg.Circles.
     What goes out:  Returns the product of the x-coordinates
@@ -225,7 +231,6 @@ def run_test_practice_problem3b():
 
 
 def practice_problem3b(sequence):
-    for k in range(len(sequence)):
         """
     What comes in: A non-empty sequence.
     What goes out: Returns True if the last item of the sequence

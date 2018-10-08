@@ -106,11 +106,7 @@ class Box(object):
         # --------------------------------------------------------------
 
     def append_string(self, additional_contents):
-        self.additional_contents = additional_contents
-        if self.additional_contents = contents:
-            return additional_contents
-        else:
-            return 
+
         """
         What comes in:
           -- self
